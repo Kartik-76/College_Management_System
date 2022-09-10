@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(224, 241, 238);
+}
+
+.navbar {
+  
+}
+
+.navbar::before {
+    content : "";
+    z-index: -1;
+    opacity: 0.89;
+  
+}
+
+.container-left {
+  position: absolute;
+  /* display: inline-block; */
+  left: 34px;
+  top: 12px;
+  font-size: 42px;
+  font-weight: bold;
+  color: red;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  justify-content: end;
+}
+
+.navbar ul li {
+  margin: 12px 12px;
+  padding: 12px 12px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+
+.navbar ul li a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: rgb(147, 160, 160);
+}
+
+/* Home Content CSS */
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+}
+
+#home::before {
+  content: "";
+  background: url(collegephoto.webp) no-repeat center center/cover;
+  position: absolute;
+  height: 70%;
+  top: 0px;
+  left: 0px;
+  bottom: 20px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.89;
+}
+
+#home h1 {
+  color: rgb(214, 214, 214);
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* service Section */
+
+#services-container {
+}
+
+#services-container h1 {
+  text-align: center;
+}
+#courses {
+  margin: 38px;
+  display: flex;
+}
+
+#courses .box {
+  border: 2px solid brown;
+  padding: 33px;
+  margin: 2px 55px;
+  border-radius: 33px;
+  background-color: beige;
+  margin-bottom: 2px;
+  width: 33%;
+}
+
+#courses .box h2 {
+  padding: 4px;
+  text-align: center;
+}
+
+#courses .box img {
+  height: 150px;
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+/* Recuriter */
+
+#recuriter-section {
+  position: relative;
+}
+
+#recuriter-section h1 {
+  text-align: center;
+}
+
+#recuriter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap-reverse;
+}
+
+.recuriter-name {
+  padding: 34px;
+}
+
+.recuriter-name img {
+  height: 130px;
+  padding: 12px;
+  margin: 12px;
+}
+
+/* Form */
+
+.form{
+  text-align: center;
+  /* border: 2px solid yellow; */
+  margin: 100px auto;
+  padding: 20px 15px;
+  width: 80%;
+
+}
+
+.form-group input{
+ text-align: center;
+ display: block;
+ width: 400px;
+ padding: 0px;
+ /* border: 2px solid black; */
+ border: none;
+ margin: 12px auto;
+ border-radius: 12px;
+ font-size: 22px;
+
+}
+
+.form-group textarea{
+  border-radius: 12px;
+  text-align: center;
+  width: 400px;
+  padding: 0px;
+  border: none;
+  margin: 12px auto;
+  display: block;
+  font-size: 22px;
+  
+}
+
+.btn{
+  margin: 0px 9px;
+  padding: 3px 11px;
+  color: white;
+  background-color: black;
+  font-size: 20px;
+  border-radius: 15px;
+  border-radius: 1px solid grey;
+}
+.btn:hover{
+  cursor: pointer;
+  text-decoration: underline;
+  color: skyblue;
+}
+
+/* Footer Section */
+
+
+.footer {
+    height: 36px;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:rgb(0, 0, 0);
+    flex-direction: column;
+  
+  }
+
+  .footer p{
+      font-size: 24px;
+      padding-bottom: 10px;
+  }
+  
+  .footer a{
+      font-size: 18px;
+      color:rgb(0, 0, 0);
+      text-decoration: none;
+      padding-bottom: 10px;
+  
+  
+  }
+  .footer a:hover{
+      color:rgb(3, 124, 172);
+      text-decoration: underline;
+      font-weight: bolder;
+      
+  }
